@@ -1,9 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello Coursera!</title>
+	<meta charset="utf-8">
+	<title>Module 2 solution</title>
+	<style>
+		*{box-sizing: border-box;}
+
+		body{
+			font-family: "Comic Sans MS", cursive, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		section{
+			margin-left: auto;
+			margin-right: auto;			
+			width: 33.33%;
+			float: left;
+		}
+
+		div{
+			
+			border: 1px solid black;
+			background-color: #FFDAB9;
+		}
+		
+		h1 {
+			font-size: 175%;
+			text-align: center;
+		}
+
+		p {  
+			font-size:100%;
+			color: #228B22;
+			clear: right;
+			margin: 10px;
+		}
+
+		h2{ 
+            font-size: 125%;
+			text-align: center;
+			color:#F5FFFA;
+			margin: 0px 0px 5px;
+			width: 150px;
+			float: right;
+			clear: right;
+			border-bottom: 1px solid black;
+			border-left: 1px solid black;
+		}	
+
+		#a{background-color: #8B0000;}
+        #b{background-color: #483D8B;}
+        #c{background-color: #DC143C;}
+
+		@media(min-width:992px)
+		{.col-lg-3
+			{
+		     padding:10px 0px 0px 10px;        
+			 width:33.33%;
+		    }
+		 #three
+		    {
+		  	 padding-right: 10px;
+		  	}
+		}
+
+		@media(min-width:768px) and (max-width:991px)
+		{.col-md-2
+			{
+			 padding:10px 10px 0px 10px;
+			 width:50%;
+			}
+         #one
+            {
+			 padding-right:0px;   
+			}
+		 #three
+		    {
+		     width:100%;
+		    }
+        }
+
+		@media(max-width:767px)
+		{.col-sl-1
+			{
+			 padding:10px 10px 0px 10px;
+			 width:100%;
+			}
+		}
+	</style>
 </head>
 <body>
-<h1>Hello Coursera! It's a good course!</h1>
+	<h1>Our Menu</h1>
+
+	<section class="col-lg-3 col-md-2 col-sl-1"  id="one">
+		<div>
+			<h2 id="a">Black forest</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+	    </div>
+	</section>
+
+    <section class="col-lg-3 col-md-2 col-sl-1">
+    	<div>
+    		<h2 id="b">Blueberry</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        </div>
+    </section>
+
+    <section class="col-lg-3 col-md-2 col-sl-1"  id="three">
+    	<div>
+    		<h2 id="c">Red Velvet</h2>
+ 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+ 		</p>
+ 	    </div>
+    </section>
+
 </body>
 </html>
